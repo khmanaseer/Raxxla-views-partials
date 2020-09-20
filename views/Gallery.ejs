@@ -1,0 +1,20 @@
+<%-include("partials/header.ejs")%>
+
+<div id="Gallery">
+	<div class="row">
+		<% Gallery.forEach(function(gallery){ %>
+		<div class="col-lg-4 col-s-6">
+			<div class="card" style="width: 18rem;">
+						<img src="<%=gallery.img%>" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title"><%=gallery.Title%></h5>
+					<p class="card-text"><%=gallery.description%></p>
+					<a href="/Gallery/<%=gallery._id%>" class="btn btn-secondary">Read more</a>
+				</div>
+			</div>
+		</div>
+		<% }) %>
+	</div>
+</div>
+
+<%-include("partials/footer.ejs")%>
