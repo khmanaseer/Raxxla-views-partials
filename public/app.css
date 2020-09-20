@@ -1,0 +1,363 @@
+body{
+	background:#2c2e2f
+}
+
+
+/* ==================== */
+/* Raxxla Picture */
+/* ==================== */
+.navbar .brand { 
+    max-height: 40px;
+    max-width: 30%; 
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+}
+
+.navbar .brand img { 
+    max-height: 30px;
+    max-width: 100%; 
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+	margin-right:50px;
+}
+
+
+/* ========================= */
+/* Burger Toggler */
+/* ========================= */
+}
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+/* ======================== */
+/* NavBar Styling */
+/* ======================== */
+
+.navbar {
+	background-color:#0f1624;
+	font-family:Playfair;
+	font-size: 1.2rem;
+	color:#f3b358;
+}
+
+nav a{
+	color:#f3b358;
+}
+
+/* ========================== */
+/* JumbotronStyling */
+/* ========================== */
+.jumbotron{
+	background-image:url("https://i.redd.it/cduxe74abzl51.jpg");
+	margin:20px auto;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.jumbotron p{
+	color:white;
+}
+
+h1{
+	color:white;
+	font-size: 3rem;
+	font-family: Londrina;
+}
+
+
+/* =================== */
+/* Scroll Bar */
+/* =================== */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid #292929;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #1f1b1b;  
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #141313;  
+}
+/* ScrollBar End Code */
+
+
+
+#box{
+	margin:10px;
+}
+
+#firstBox{
+	width:100%;
+	height:418px;
+	border:solid red 0px;
+	overflow:auto;
+	margin-bottom:30px;
+	width:auto;
+}
+
+#secondBox{
+	width:100%;
+	height:418px;
+	border:solid red 0px;
+	height:auto;
+}
+
+#headerBox1{
+	height:40px;
+	background-image: url("https://i.redd.it/qmx6ltmyz9e51.png");
+	background-attachment:fixed;
+	background-position:center;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#headerBox2{
+	height:40px;
+	background-image: url("https://i.redd.it/nmmffh86bfd51.jpg");
+	background-attachment:fixed;
+	background-position:center left;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+
+#headerBox1 p{
+	padding-top:7px;
+	color:#f3b358;
+	font-weight: 500;
+	font-size:1.2rem;
+	padding-left:5px;
+}
+#headerBox2 p{
+	padding-top:7px;
+	color:#f3b358;
+	font-weight: 500;
+	font-size:1.2rem;
+	padding-left:5px;
+}
+
+.member-header{
+	color:#ff8800;
+	font-family:Playfair;
+	margin-bottom:25px;
+	padding-left:8px;
+	background:#393b3b;
+	width:100%;	
+	border-radius:10px;
+}
+
+#box .member img{
+	width:100%;
+	margin:0;
+}
+#member-description{
+	background-color:#444345;
+	margin-bottom:50px;
+	width:100%;
+}
+#member-description p{
+	color:#c7c9c9;
+	font-size:.9rem;
+}
+
+h2{
+	font-family:Londrina;
+	color:white;
+}
+
+.card{
+	background: #444345;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin:10px auto;
+}
+.card img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.card h5{
+	color:#ff8800;
+}
+.card li{
+	color:#c7c9c9;
+}
+
+#News{
+	margin: 30px auto;
+	padding: 0 0px;
+	color: #c7c9c9;
+}
+
+#RaxxlaSquadron{	
+	padding:0;
+	border:1px solid rgba(89,88,88,.1);
+	margin:10px;
+	border-radius:20px;
+	width:auto;
+	height: 300px;
+	overflow:auto;
+}
+
+#weeklyMission{
+	padding: 0;
+	border:1px solid rgba(89,88,88,.1);
+	margin:10px;
+	border-radius:20px;
+	width:auto;
+	height: auto;
+	overflow:auto;
+}
+
+#RaxxlaSquadron h3{
+	margin-bottom:20px; 
+	color:#f3b358;
+	background-image:url("https://preview.redd.it/dk3a4i2jacn51.png?width=1920&format=png&auto=webp&s=5d560af0e335bdf9193224d4393ca82e6d44c3b0");
+	background-attachment:fixed;
+	background-position:center;
+	height:100%;
+	padding:3px 15px;
+}
+
+#RaxxlaSquadron p{
+	padding:10px 15px;
+	padding-left:25px;
+}
+
+#weeklyMission h3{
+	margin-bottom:20px;
+	color:#f3b358;
+	background-image:url("https://i.redd.it/59mi26c371451.jpg");
+	background-attachment:fixed;
+	background-position:bottom;
+	height:100%;
+	padding:3px 15px;
+}
+
+#RaxxlaShips{
+	margin-top:20px;
+	border:1px solid rgba(89,88,88,.1);
+	border-radius:20px;
+}
+
+.shipCards{
+	margin:auto;
+}
+
+
+/* newGallery Styling */
+#newGallery{
+	border-radius:20px;
+	border:solid #e0e0e0 1px;
+	background-color:#d9d9d9;
+	margin:0 auto;
+	height:25%;
+	width:35%;
+}
+
+#newGallery form{
+	padding:20px;
+}
+
+#galleryBody{
+	padding-top:100px;
+	padding-bottom:150px;
+	background-image:url("https://i.redd.it/dp0838n1avb51.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	width:100%;
+	height:100%;
+}
+
+#Gallery{
+	width:100%;
+	height:;
+	padding:30px 20px;
+	margin:30px auto;
+	background: background: rgb(5,5,5);
+	background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(162,25,11,1) 9%, rgba(240,72,6,1) 21%, rgba(0,3,4,1) 37%, rgba(16,17,17,1) 60%, rgba(232,58,49,1) 75%, rgba(102,50,13,1) 87%, rgba(0,10,10,1) 100%);
+}
+
+
+
+/* Glitchy-Container */
+#glitchy-container{
+	margin:0;
+	padding:0;
+	position: absolute;
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	background:url("https://i.redd.it/nz8bud701o451.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.glitchy-box{
+	position:absolute;
+	background:url("https://i.redd.it/nz8bud701o451.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	margin:0;
+	padding:0;
+}
+
